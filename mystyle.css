@@ -1,0 +1,20 @@
+body{
+    background-color: aliceblue;
+    background-image: url(Logo_Universitas_Multi_Data_Palembang.png);
+}
+h3{
+    color: blueviolet;
+}
+.para{
+    color: aqua;
+}
+#pari{
+    color: burlywood;
+}
+div{
+    color: darkslategray;
+    background-color: grey;
+    padding: 50px;
+    border: 15px;
+    margin: 20px;
+}
