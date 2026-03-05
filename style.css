@@ -1,0 +1,29 @@
+/* element selector */
+body{
+    background-color: blueviolet;
+}
+/* class selector */
+.bg-primary{
+    background-color: yellow;
+}
+.text-center{
+    text-align: center;
+}
+/* responsive web design*/
+@media screen and (max-width: 600px){
+    body{
+        background-color: red
+    }
+    .col-xs{
+        width:100%
+    }
+}
+@media screen and (min-width:601px){
+    body{
+        background-color: green;
+    }
+    .col-lg{
+        width: 25%;
+        float: left;
+    }
+}

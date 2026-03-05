@@ -1,7 +1,9 @@
+                                           
 body{
     background-color: aliceblue;
-    background-image: url(Logo_Universitas_Multi_Data_Palembang.png);
+    
 }
+
 h3{
     color: blueviolet;
 }
@@ -11,10 +13,53 @@ h3{
 #pari{
     color: burlywood;
 }
-div{
+.div1{
     color: darkslategray;
     background-color: grey;
     padding: 50px;
     border: 15px;
     margin: 20px;
+}
+.div2{
+    width: 100%;
+    height: 100px;
+    padding: 50px;
+    border: 1px solid red;
+}
+.container{
+    color: black;
+    display: grid;
+    grid-template-columns:  auto auto auto;
+
+}
+.container1{
+    display: grid;
+    grid-template-columns: 80px 200px auto;
+}
+.container2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.container3{
+    display: grid;
+    grid-template-columns: minmax(80px, 1fr)150px 150px;
+}
+.container4{
+    display: grid;
+    column-gap: 5%;
+    gap: 10%;}
+      
+.container5{
+    justify-content: space-evenly;
+}
+.container6{
+    display: grid;
+    height: 300px;
+    align-content: space-between;
+    /* 
+    align-content: start;
+    align-content : end;
+    place-content : center;
+
+    */
 }
