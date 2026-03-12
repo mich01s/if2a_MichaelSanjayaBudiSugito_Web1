@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="mystyle.css">
+    <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+    </script>
+    <form action="">
+        <label for="">Choose your browser</label>
+        <input list="browsers" type="text">
+        <datalist id = browsers>
+            <option value="Edge"></option>
+            <option value="Firefox"></option>
+            <option value="Chrome"></option>
+        </datalist>
+        <div>
+            <label for="uname">Username</label>
+            <input id="uname" placeholder="Enter username" type="text">
+            <div class="valid-feedback">Valid</div>
+            <div class="invalid-feedback">Please fill out this field</div>
+        </div>
+    </form>
+    <div>
+        <h2>What can javascript do</h2>
+        <p> Javascript can show hidden HTML element</p>
+        <p id="demo"> Hello javascript</p>
+        <script>
+            document.getElementById("demo").innerHTML="Hello World";
+            alert("You have been blocked");
+            console.log("Hello woooorld")
+            let x = 5;
+            x = 7;
+            let y ="d";
+            let z = x+y;
+            console.log(z)
+            
+        </script>
+    </div>
+</body>
+</html>
