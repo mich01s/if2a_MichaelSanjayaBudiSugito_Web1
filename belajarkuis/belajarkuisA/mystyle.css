@@ -24,19 +24,16 @@ p{
     color: aliceblue;
 }
 .atas{
-    height: 50px;
-    position: sticky;
-    background-color: darkblue;
+    display: flex;
     justify-content: space-between;
 }
 .div1{
     background-color: darkblue;
     color: aliceblue;
 }
-.atas img{
-    display: flex;
-    height: 100%;
-    width: 10%;
+.logo img{
+    
+    height: 60px;
 }
 .p-5{
     padding: 5px;
