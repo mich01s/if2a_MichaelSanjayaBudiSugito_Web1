@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6,p,b{
+    color: white;
+}
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+body{
+    background-color: darkviolet;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: center;
+    padding: 10px;
+}
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap :10px;
+}
+
+.join-today{
+    display: flex;
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-image:url("Materi-20260311T040408Z-3-001\Materi\bg.webp");
+}
+.p-5{
+    padding: 5px;
+}
+@media screen and (max-width:600px){
+    
+}
+@media screen and (min-width :601px) {
+    .col-md-50{
+        width: 50%;
+        float: left;
+    }
+    .col-md-100{
+        width: 100%;
+        float: left;
+    }
+}
+@media screen and (min-width:992px) {
+    .col-lg-50{
+        width: 50%;
+        float: left;
+    }
+    .col-lg-25{
+        width: 25%;
+        float: left;
+    }
+    .col-lg-16{
+        width: 16.666%;
+        float: left;
+    }
+    .col-lg-75{
+        width: 75%;
+        float: left;
+    }
+}

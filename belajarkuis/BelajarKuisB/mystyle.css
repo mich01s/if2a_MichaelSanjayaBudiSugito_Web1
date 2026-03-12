@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    color: white;
+    background-color: darkviolet;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+img{
+    width: 100%;
+    border-radius: 15px;
+}
+footer{
+    /* positon : fixed; 
+    bottom :0;*/
+    color: aliceblue;
+}
+.p-5{
+    padding: 5px
+}
+.navbar{
+    
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.sign-up{
+    background-color: blueviolet;
+    width: 10%;
+    text-align: center;
+    border-radius: 15px;
+}
+.join{
+    clear: both;
+    background-image: url('bg.webp');
+    background-size: cover;
+    background-position: top;
+    /* display: flex; */
+    border-radius: 15px;
+    padding: 10px;
+    
+}
+@media screen and (max-width:600px) {
+    
+}
+@media screen and (min-width:601px) {
+    .col-md-50{
+        width: 50%;
+        float: left;
+    }
+}
+@media screen and (min-width:992px) {
+    .col-lg-100{
+        width: 100%;
+        float: left;
+    }
+    .col-lg-75{
+        width: 75%;
+        float: left;
+    }
+    .col-lg-50{
+        width: 50%;
+        float: left;
+    }
+    .col-lg-25{
+        width: 25%;
+        float: left;
+    }
+    .col-lg-16{
+        width: 16.66%;
+        float: left;
+    }
+}

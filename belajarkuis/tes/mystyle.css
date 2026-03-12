@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin-left: 20px;
+    margin-right: 20px;
+    color: white;
+    background-color: darkblue;
+}
+img{
+    width: 100%;;
+}
+h1,h2,h3,h4,h5,h6,b,p{
+    color: white;
+}
+input,select, textarea{
+    width: 100%;
+    height: 30px;
+    border-color: aqua;
+    border-radius: 10px;
+    padding-left: 15px;
+}
+.kirim{
+    color: black;
+    background-color: lightblue;
+}
+.isi{
+    height: 70px;
+}
+iframe{
+    height: 300px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.logo img{
+    height: 40px;
+}
+.logo-teks{
+   padding-top: 10px;
+}
+.p-5{
+    padding: 5px;
+}
+.hitam{
+    background-color: black;
+    height: 100px;
+}
+
+@media screen and (max-width:600px) {
+    
+}
+@media screen and (min-width : 601px) {
+    .col-md-50{
+        width: 50%;
+        float: left;
+    }
+    .col-md-50 img{
+        border-radius: 15px;
+    }
+    .col-md-100{
+        width: 100%;
+        float: left;
+    }
+}
+@media screen and (min-width : 992px) {
+    .col-lg-100{
+        width: 100%;
+        float: left;
+        text-align: center;
+    }
+    .col-lg-100 img {
+        border-radius: 15px;
+    }
+    
+    .col-lg-50{
+        width: 50%;
+        float: left;
+    }
+    .col-lg-50 img {
+        border-radius: 15px;
+    }
+    .col-lg-25{
+        width: 25%;
+        float: left;
+    }
+    .col-lg-25 img {
+        border-radius: 15px;
+    }
+}
