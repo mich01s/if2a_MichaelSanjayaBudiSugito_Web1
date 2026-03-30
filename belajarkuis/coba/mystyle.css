@@ -1,0 +1,146 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-color: blue;
+    color: white;
+}
+img{
+    width: 100%;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo img{
+    width: 180px;
+}
+
+h1,h2,p{
+    color: white;
+}
+.p-5{
+    padding: 5px;
+}
+.marginkanankiri{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.video{
+    height: 300px;
+}
+input, select{
+    border-radius: 10px;
+    height: 35px;
+    width: 100%;
+    border-color: lightblue;
+}
+.inputsubmit{
+    color: black;
+    background-color: lightblue;
+    border-color: white;
+}
+.inputtinggi{
+    height:70px;
+}
+footer{
+    text-align: center;
+    background-color: green;
+}
+@media screen and (max-width:600px) {
+    .navbar-sm{
+        flex-direction: column;
+
+    }
+    .logo-sm{
+        align-self: center;
+    }
+    .logo-teks-sm{
+        align-self: center;
+    }
+    .logo-teks1-sm{
+        padding-top: 30px;
+    }
+    .logo-teks2-sm{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .col-sm-100{
+        padding: 35px;
+    }
+    .col-sm-100 img{
+        border-radius: 15px;
+    }
+    
+}
+@media screen and (min-width:601px) {
+    .col-md-50{
+        width: 50%;
+        float: left;
+        padding: 10px;
+    }
+    .col-md-50 img{
+        border-radius: 15px;
+    }
+    .col-md-100{
+        width: 100%;
+        float: left;
+    }
+
+    .logo-teks-md{
+        padding-top: 20px;
+        width: 60%;
+        margin-right: 20px;
+    }
+    .logo-teks1-md{
+        border-radius: 15px;
+        background-color: white;
+        color: black;
+        justify-content: flex-end;
+        text-align: center;
+        
+    }
+    .logo-teks2-md{
+        text-align: center;
+    }
+}
+@media screen and (min-width:992px) {
+    .col-lg-25{
+        width: 25%;
+        float: left;
+    }
+    .col-lg-25 img{
+        border-radius: 15px;
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+    .col-lg-50{
+        width: 50%;
+        float: left;
+    }
+    .col-lg-75{
+        width: 75%;
+        float: left;
+    }
+    .col-lg-100{
+        width: 100%;
+        float: left;
+    }
+    .logo-teks-lg{
+        padding-top: 30px;
+        display: flex;
+        padding-left: 350px;
+    }
+    .logo-teks1-lg{
+        background-color: blue;
+        color: white;
+
+    }
+    .logo-teks2-lg{
+        padding-left: 25px;
+    }
+}
