@@ -17,5 +17,5 @@ fetch("https://data.bmkg.go.id/DataMKG/TEWS/autogempa.json")
     
     
     document.getElementById("gempa-terbaru").innerHTML = `${data.Infogempa.gempa.Tanggal}<br> ${data.Infogempa.gempa.Wilayah} <img src="https://static.bmkg.go.id/20260406085646.mmi.jpg" alt=""> <hr>`
-    img
+    
 })  
