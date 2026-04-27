@@ -12,8 +12,8 @@ class PeriodeController extends Controller
      */
     public function index()
     {
-         // akses tabel Fakultas
-        $result1  = Periode::all(); // select * from fakultas
+         // akses tabel Periode
+        $result1  = Periode::all(); // select * from periode
         // dd($result);
         
         return view('periodes.index',compact(('result1')));
