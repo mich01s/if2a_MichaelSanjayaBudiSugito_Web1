@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('periodes', function (Blueprint $table) {
-            $table->integer("tahun_akademik");
+            $table->string("tahun_akademik");
             $table->integer("semester");
         });
     }
