@@ -1,5 +1,12 @@
+@extends('main')
+@section('title','Prodi')
+    
+@section('content')
+    
+
+
 <h1>Data Prodi</h1>
-<table border="1" cellpadding ="10">
+<table class="table table-bordered">
     <tr>
         <th>No</th>
         <th>nama_prodi</th>
@@ -17,4 +24,4 @@
         </tr>
     @endforeach
 </table>
-
+@endsection
