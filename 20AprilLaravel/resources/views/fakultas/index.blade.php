@@ -1,9 +1,5 @@
 @extends('main')
-
 @section('title','Fakultas')
-    
-
-
 @section('content')
     <a href="{{route('fakultas.create')}}" class="btn btn-primary mb-2"> Tambah</a>
     <table class="table table-bordered">
@@ -20,7 +16,10 @@
                     <td>{{$item->nama_fakultas}}</td>
                     <td>{{$item->singkatan}}</td>
                     <td>
-                        <form method="POST" action="{{ route('fakultas.destroy', $item->id) }}">
+                        <a href="{{route("fakultas.edit", $item->id)}}" 
+                            class="btn btn-warning btn-rounded">Ubah</a>
+
+                        <form method="POST" action="{{ route('fakultas.destroy', $item->id) }}" class="d-inline">
                         @csrf
                         <input name="_method" type="hidden" value="DELETE">
                         <button type="submit" class="btn btn-xs btn-danger btn-rounded show_confirm"

@@ -62,9 +62,12 @@ class PeriodeController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Periode $periode)
+    public function edit($periode)
     {
-        //
+        $periode = Periode::find($periode); // cari berdasarkan id
+
+        // dd($periode);
+        return view('periodes.edit',compact('periode'));
     }
 
     /**
@@ -72,14 +75,26 @@ class PeriodeController extends Controller
      */
     public function update(Request $request, Periode $periode)
     {
-        //
+        
+        $input = $request->validate([
+            'tahun_akademik' => 'required|unique:periodes,tahun_akademik,' .$periode->id,
+            'semester'=>'required'
+        ]);
+        // dd($input);
+        // simpan perubahan data ke tabel periode
+        Periode::where('id',$periode->id)->update($input);
+        
+        return redirect()->route('periodes.index');
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Periode $periode)
+    public function destroy($periode)
     {
-        //
+        
+        $periode = Periode::find($periode);// cari data berdasarkan id
+        $periode->delete(); // hapus data periode
+        return redirect()->route('periodes.index');
     }
 }
