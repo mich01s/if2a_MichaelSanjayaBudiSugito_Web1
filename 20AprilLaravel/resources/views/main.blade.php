@@ -361,6 +361,12 @@
                   <p>Prodi</p>
                 </a>
               </li>
+              <li class="nav-item">
+                <a href="{{route('mahasiswas.index')}}" class="nav-link">
+                  <i class="nav-icon bi bi-people"></i>
+                  <p>Mahasiswa</p>
+                </a>
+              </li>
               
           </nav>
         </div>
