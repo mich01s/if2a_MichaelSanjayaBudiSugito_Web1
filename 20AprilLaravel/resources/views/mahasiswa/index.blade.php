@@ -23,7 +23,7 @@
             <td>{{$mhs->npm}}</td>
             <td>
                 @if ($mhs->foto)
-                    <img src="{{ asset('storage/fotos' . $mhs->foto) }}" alt="Foto" width="100">
+                    <img src="{{ asset('storage/fotos/' . $mhs->foto) }}" alt="Foto" width="100">
                 @else
                     <p>Foto tidak tersedia</p>
                 @endif
